@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(45deg, #1bbce0,rgb(53, 255, 188));
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  min-height: 100vh;
+}
+
+.notesList{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.Note.new {
+  background-color: rgb(53, 255, 188);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(53, 255, 188);
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  background-color: rgba(1, 175, 255, 0.897);
+  border: none;
+  border-radius: 15px;
+  height: 30px;
+  width: 70px;
+  cursor: pointer;
+  font-size: 17px;
+  color: darkblue;
+  font-weight: 500;
+}
+.save:hover{
+  border: 4px solid rgb(201, 213, 213);
+  background-color: rgb(201, 213, 213);
+}
+
+
+.Note {
+  background-color: rgb(201, 213, 213);
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.Note span{
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.noteFooter{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.deleteIcon{
+  cursor: pointer;
+}
+.Search{
+  display: flex;
+  align-items: center;
+  background-color: rgb(216, 216, 216);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.Search input {
+  border: none;
+  background-color: inherit;
+}
+.Search input:focus {
+  outline: none;
+}
+
