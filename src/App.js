@@ -10,10 +10,19 @@ import { nanoid } from 'nanoid';
 function App() {
   const [notes, setNotes] = useState([
     {
-      
       id: nanoid(),
-      text: "Hello Someday We'll Test this",
-      date: "6/2/2024"
+      text: "Why did the Leafeon get so good at math?,It practiced every day until it was perfect from root to stem!",
+      date: "6/7/2023"
+    },
+    {
+      id: nanoid(),
+      text: "How do you know when an Eevee is telling a lie? Its tail starts to wag like a Leafeon in a hurricane!",
+      date: "6/7/2023"
+    },
+    {
+      id: nanoid(),
+      text: "Why did the Jolteon always get grounded? Because it couldn't resist zapping the family appliances!",
+      date: "6/7/2023"
     },
   
 
@@ -36,7 +45,8 @@ function App() {
     const newNote = {
       id: nanoid(),
       text: text,
-      date: date.toLocaleDateString()
+      date: date.toLocaleDateString(),
+      // class: "notesApp",
     }
     const newNotes = [...notes, newNote];
     setNotes(newNotes); 

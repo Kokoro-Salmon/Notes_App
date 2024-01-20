@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(45deg, #1bbce0,rgb(53, 255, 188));
+   /* background-color: rgb(252, 206, 145); */
 }
 
 code {
@@ -112,3 +113,7 @@ textarea:focus{
   outline: none;
 }
 
+/* .notesApp{
+  background-color: aqua;
+
+} */
